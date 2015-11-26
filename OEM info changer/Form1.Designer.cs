@@ -29,56 +29,56 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnGo = new System.Windows.Forms.Button();
+            this.txtManf = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtModel = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtUrl = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txths = new System.Windows.Forms.TextBox();
+            this.OEMlogo = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.imgLoad = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OEMlogo)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGo
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(151)))), ((int)(((byte)(173)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(119)))), ((int)(((byte)(136)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(167)))), ((int)(((byte)(189)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(151, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Go ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(151)))), ((int)(((byte)(173)))));
+            this.btnGo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(119)))), ((int)(((byte)(136)))));
+            this.btnGo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(167)))), ((int)(((byte)(189)))));
+            this.btnGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGo.ForeColor = System.Drawing.Color.White;
+            this.btnGo.Location = new System.Drawing.Point(151, 276);
+            this.btnGo.Name = "btnGo";
+            this.btnGo.Size = new System.Drawing.Size(162, 48);
+            this.btnGo.TabIndex = 0;
+            this.btnGo.Text = "Go ";
+            this.btnGo.UseVisualStyleBackColor = false;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
-            // textBox1
+            // txtManf
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
-            this.textBox1.Location = new System.Drawing.Point(124, 86);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 21);
-            this.textBox1.TabIndex = 1;
+            this.txtManf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
+            this.txtManf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtManf.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
+            this.txtManf.Location = new System.Drawing.Point(124, 86);
+            this.txtManf.Multiline = true;
+            this.txtManf.Name = "txtManf";
+            this.txtManf.Size = new System.Drawing.Size(219, 21);
+            this.txtManf.TabIndex = 1;
             // 
             // label1
             // 
@@ -104,17 +104,17 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Model";
             // 
-            // textBox2
+            // txtModel
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
-            this.textBox2.Location = new System.Drawing.Point(124, 130);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 21);
-            this.textBox2.TabIndex = 3;
+            this.txtModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
+            this.txtModel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtModel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
+            this.txtModel.Location = new System.Drawing.Point(124, 130);
+            this.txtModel.Multiline = true;
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(219, 21);
+            this.txtModel.TabIndex = 3;
             // 
             // label3
             // 
@@ -128,17 +128,17 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Support Phone";
             // 
-            // textBox3
+            // txtPhone
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
-            this.textBox3.Location = new System.Drawing.Point(124, 167);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 21);
-            this.textBox3.TabIndex = 5;
+            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPhone.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
+            this.txtPhone.Location = new System.Drawing.Point(124, 167);
+            this.txtPhone.Multiline = true;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(219, 21);
+            this.txtPhone.TabIndex = 5;
             // 
             // label4
             // 
@@ -152,17 +152,17 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Support URL";
             // 
-            // textBox4
+            // txtUrl
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
-            this.textBox4.Location = new System.Drawing.Point(124, 206);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(219, 21);
-            this.textBox4.TabIndex = 7;
+            this.txtUrl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
+            this.txtUrl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUrl.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
+            this.txtUrl.Location = new System.Drawing.Point(124, 206);
+            this.txtUrl.Multiline = true;
+            this.txtUrl.Name = "txtUrl";
+            this.txtUrl.Size = new System.Drawing.Size(219, 21);
+            this.txtUrl.TabIndex = 7;
             // 
             // label5
             // 
@@ -176,27 +176,27 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Support Hours";
             // 
-            // textBox5
+            // txths
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
-            this.textBox5.Location = new System.Drawing.Point(124, 246);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(219, 21);
-            this.textBox5.TabIndex = 9;
+            this.txths.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(204)))), ((int)(((byte)(207)))));
+            this.txths.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txths.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txths.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(142)))), ((int)(((byte)(143)))));
+            this.txths.Location = new System.Drawing.Point(124, 246);
+            this.txths.Multiline = true;
+            this.txths.Name = "txths";
+            this.txths.Size = new System.Drawing.Size(219, 21);
+            this.txths.TabIndex = 9;
             // 
-            // pictureBox1
+            // OEMlogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(355, 88);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.OEMlogo.Image = ((System.Drawing.Image)(resources.GetObject("OEMlogo.Image")));
+            this.OEMlogo.Location = new System.Drawing.Point(355, 88);
+            this.OEMlogo.Name = "OEMlogo";
+            this.OEMlogo.Size = new System.Drawing.Size(149, 116);
+            this.OEMlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.OEMlogo.TabIndex = 11;
+            this.OEMlogo.TabStop = false;
             // 
             // label6
             // 
@@ -208,20 +208,20 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "OEM Logo";
             // 
-            // button2
+            // imgLoad
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(222)))), ((int)(((byte)(100)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(226)))), ((int)(((byte)(69)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(386, 226);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 28);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "load";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.imgLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(222)))), ((int)(((byte)(100)))));
+            this.imgLoad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(226)))), ((int)(((byte)(69)))));
+            this.imgLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.imgLoad.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imgLoad.ForeColor = System.Drawing.Color.White;
+            this.imgLoad.Location = new System.Drawing.Point(386, 226);
+            this.imgLoad.Name = "imgLoad";
+            this.imgLoad.Size = new System.Drawing.Size(80, 28);
+            this.imgLoad.TabIndex = 13;
+            this.imgLoad.Text = "load";
+            this.imgLoad.UseVisualStyleBackColor = false;
+            this.imgLoad.Click += new System.EventHandler(this.imgLoad_Click);
             // 
             // panel1
             // 
@@ -269,19 +269,19 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(524, 336);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.imgLoad);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.OEMlogo);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txths);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtUrl);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtModel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtManf);
+            this.Controls.Add(this.btnGo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -291,7 +291,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OEM info Changer";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OEMlogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -302,24 +302,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtUrl;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txths;
+        private System.Windows.Forms.PictureBox OEMlogo;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button imgLoad;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtManf;
     }
 }
 

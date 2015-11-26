@@ -17,7 +17,7 @@ namespace OEM_info_changer
             InitializeComponent();
         }
         string imgsrc;
-        private void button2_Click(object sender, EventArgs e)
+        private void imgLoad_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Select the patch of image";
@@ -25,32 +25,32 @@ namespace OEM_info_changer
             if (ofd.ShowDialog() == DialogResult.OK)
             {
 
-                pictureBox1.Load(ofd.FileName);
+                OEMlogo.Load(ofd.FileName);
                 imgsrc = ofd.FileName.ToString();
             }
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGo_Click(object sender, EventArgs e)
         {
-            RegistryKey mykey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\Microsoft\Windows\CurrentVersion\OEMInformation", true);
-            mykey.SetValue("Manufacturer", textBox1.Text);
-            mykey.SetValue("Model", textBox2.Text);
-            mykey.SetValue("SupportURL", textBox4.Text);
-            mykey.SetValue("SupportHours", textBox5.Text);
-            mykey.SetValue("SupportPhone", textBox3.Text);
+            RegistryKey oemKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\Microsoft\Windows\CurrentVersion\OEMInformation", true);
+            oemKey.SetValue("Manufacturer", txtManf.Text);
+            oemKey.SetValue("Model", txtModel.Text);
+            oemKey.SetValue("SupportURL", txtUrl.Text);
+            oemKey.SetValue("SupportHours", txths.Text);
+            oemKey.SetValue("SupportPhone", txtPhone.Text);
 
             if (imgsrc == null)
             {
-                mykey.SetValue("Logo", "");
+                oemKey.SetValue("Logo", "");
             }
             else
             {
-                mykey.SetValue("Logo", imgsrc);
+                oemKey.SetValue("Logo", imgsrc);
             }
 
-            mykey.Close();
-            MessageBox.Show("Done :D", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            oemKey.Close();
+            MessageBox.Show(string.Format("OEM Information has been changed  Manufacturer: {0} and Model: {1} .....", txtManf.Text, txtModel.Text), "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,18 +58,18 @@ namespace OEM_info_changer
             try
             {
                 RegistryKey mykey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\\Microsoft\Windows\CurrentVersion\OEMInformation", true);
-                textBox1.Text = mykey.GetValue("Manufacturer").ToString();
-                textBox2.Text = mykey.GetValue("Model").ToString();
-                textBox4.Text = mykey.GetValue("SupportURL").ToString();
-                textBox5.Text = mykey.GetValue("SupportHours").ToString();
-                textBox3.Text = mykey.GetValue("SupportPhone").ToString();
+                txtManf.Text = mykey.GetValue("Manufacturer").ToString();
+                txtModel.Text = mykey.GetValue("Model").ToString();
+                txtUrl.Text = mykey.GetValue("SupportURL").ToString();
+                txths.Text = mykey.GetValue("SupportHours").ToString();
+                txtPhone.Text = mykey.GetValue("SupportPhone").ToString();
                 if (mykey.GetValue("Logo").ToString() == "")
                 {
 
                 }
                 else
                 {
-                    pictureBox1.Load(mykey.GetValue("Logo").ToString());
+                    OEMlogo.Load(mykey.GetValue("Logo").ToString());
                 }
             }
             catch
